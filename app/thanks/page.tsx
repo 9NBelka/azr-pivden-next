@@ -1,7 +1,7 @@
 'use client';
 
 import { useRouter } from 'next/navigation';
-import scss from './thanks.module.scss';
+import scss from './ThanksPage.module.scss';
 import { BsArrowLeftShort } from 'react-icons/bs';
 
 export default function ThanksPage() {
