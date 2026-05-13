@@ -28,9 +28,7 @@ export default function WhyChooseUs() {
             <div className={styles.content}>
               <p className={styles.eyebrow}>/ ЧОМУ ОБИРАЮТЬ НАС</p>
               <h3 className={styles.heading}>
-                Ремонтуємо авто,
-                <br />
-                яким ви довіряєте
+                Точна діагностика. Професійний ремонт. Відповідальність за результат.
               </h3>
               <p className={styles.subtext}>
                 Спеціалізуємось на японських та VAG автомобілях. Більше 20 років — чесний сервіс,
