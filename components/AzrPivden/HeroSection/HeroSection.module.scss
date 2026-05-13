@@ -1,0 +1,245 @@
+.heroSection {
+  position: relative;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100vh;
+}
+
+@media (max-width: 1024px) {
+  .heroSection {
+    height: 100%;
+  }
+}
+
+.heroContent {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  height: 100%;
+}
+
+@media (max-width: 1024px) {
+  .heroContent {
+    padding-top: 25vw;
+    padding-bottom: 20vw;
+  }
+}
+
+@media (max-width: 576px) {
+  .heroContent {
+    padding-top: 30vw;
+    padding-bottom: 30vw;
+  }
+}
+
+.container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+
+.leftSide {
+  display: flex;
+  flex-direction: column;
+  width: 35%;
+  margin-left: 10vw;
+
+  & .title {
+    font-size: 3.2vw;
+    color: rgba(31, 41, 55, 1);
+    font-family: var(--font-Inter);
+    font-weight: var(--font-weight-black);
+    line-height: var(--font-lineh-small2);
+  }
+
+  & .description {
+    font-size: 1vw;
+    color: rgba(107, 114, 128, 1);
+    font-family: var(--font-Inter);
+    font-weight: var(--font-weight-bold);
+    line-height: var(--font-lineh-small);
+    margin-top: 1.5vw;
+  }
+
+  & .marcksAutoText {
+    font-size: 0.9vw;
+    color: rgba(107, 114, 128, 1);
+    font-family: var(--font-Inter);
+    font-weight: var(--font-weight-regular);
+    line-height: var(--font-lineh-normal);
+    margin-top: 1.5vw;
+    width: 75%;
+  }
+
+  & .buttonBlock {
+    display: flex;
+    margin-top: 2vw;
+
+    & .primaryButton {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      background: linear-gradient(to right, #307efa, #00a8e4);
+      color: white;
+      font-size: 1vw;
+      font-family: var(--font-Inter);
+      font-weight: var(--font-weight-bold);
+      line-height: var(--font-lineh-small);
+      border: 0;
+      padding: 1vw 1.85vw;
+      border-radius: 0.5vw;
+      transition: opacity 0.2s ease;
+      text-decoration: none;
+      gap: 0.7vw;
+      cursor: pointer;
+
+      &:hover {
+        opacity: 0.9;
+      }
+
+      & .buttonIcon {
+        width: 1.1vw;
+        height: 1.1vw;
+      }
+    }
+  }
+}
+
+@media (max-width: 1024px) {
+  .leftSide {
+    width: 70%;
+    margin-left: 5vw;
+    z-index: 10;
+
+    & .title {
+      font-size: 6vw;
+    }
+
+    & .description {
+      font-size: 2vw;
+      margin-top: 3vw;
+    }
+
+    & .marcksAutoText {
+      font-size: 1.8vw;
+      margin-top: 3vw;
+      line-height: var(--font-lineh-big);
+      width: 100%;
+    }
+
+    & .buttonBlock {
+      display: flex;
+      margin-top: 3vw;
+
+      & .primaryButton {
+        font-size: 1.8vw;
+        padding: 1.75vw 3vw;
+        border-radius: 0.75vw;
+        gap: 1.25vw;
+
+        &:hover {
+          opacity: 1;
+        }
+
+        & .buttonIcon {
+          width: 1.8vw;
+          height: 1.8vw;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 576px) {
+  .leftSide {
+    width: 100%;
+    margin-left: 4vw;
+    z-index: 10;
+
+    & .title {
+      font-size: 7vw;
+    }
+
+    & .description {
+      font-size: 4vw;
+      margin-top: 5vw;
+    }
+
+    & .marcksAutoText {
+      font-size: 3.4vw;
+      margin-top: 5vw;
+      width: 100%;
+    }
+
+    & .buttonBlock {
+      display: flex;
+      margin-top: 4vw;
+
+      & .primaryButton {
+        font-size: 3.6vw;
+        padding: 2.5vw 4.5vw;
+        border-radius: 1vw;
+        gap: 2vw;
+
+        &:hover {
+          opacity: 1;
+        }
+
+        & .buttonIcon {
+          width: 3vw;
+          height: 3vw;
+        }
+      }
+    }
+  }
+}
+
+.rightSide {
+  display: flex;
+  flex-direction: column;
+  width: 65%;
+  position: relative;
+
+  & .mapImage {
+    position: absolute;
+    top: -20vw;
+    width: 45vw;
+    z-index: 0;
+  }
+
+  & .carImage {
+    position: absolute;
+    top: -15vw;
+    width: 100%;
+    z-index: 1;
+  }
+}
+
+@media (max-width: 1024px) {
+  .rightSide {
+    display: flex;
+    flex-direction: column;
+    width: 0%;
+    position: relative;
+
+    & .mapImage {
+      position: absolute;
+      top: -50vw;
+      right: -25vw;
+      width: 100vw;
+      z-index: 0;
+    }
+
+    & .carImage {
+      position: absolute;
+      top: 10vw;
+      right: -37vw;
+      width: 100vw;
+      z-index: 1;
+    }
+  }
+}

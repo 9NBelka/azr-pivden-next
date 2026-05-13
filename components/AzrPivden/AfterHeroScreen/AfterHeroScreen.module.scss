@@ -1,0 +1,230 @@
+.section {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  overflow: hidden;
+  margin-top: 2vw;
+}
+
+@media (max-width: 1024px) {
+  .section {
+    flex-direction: column;
+    margin-top: 2vw;
+  }
+}
+
+.card {
+  display: flex;
+  flex-direction: row;
+  width: 50%;
+  min-height: 22vw;
+  position: relative;
+  overflow: hidden;
+
+  &.cardAccent {
+    .textBlock {
+      background: #2489f4;
+    }
+  }
+
+  &.cardDark {
+    .textBlock {
+      background: #000409;
+    }
+  }
+}
+
+@media (max-width: 1024px) {
+  .card {
+    width: 100%;
+    min-height: 22vw;
+
+    &.cardDark {
+      flex-direction: row-reverse;
+    }
+  }
+}
+
+.textBlock {
+  position: relative;
+  width: 50%;
+  flex-shrink: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 2.5vw 2vw 2.5vw 4.5vw;
+  overflow: hidden;
+  z-index: 1;
+
+  & .iconBlock {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.3vw;
+    margin-bottom: 1vw;
+
+    & .icon {
+      width: 3.25vw;
+      height: 3.25vw;
+    }
+  }
+
+  & .title {
+    color: var(--color-white);
+    font-size: 1.8vw;
+    font-family: var(--font-Inter);
+    font-weight: var(--font-weight-bold);
+    line-height: var(--font-lineh-normal);
+    margin: 0 0 1vw;
+    width: 80%;
+  }
+
+  & .description {
+    color: var(--color-white);
+    font-size: 1vw;
+    font-family: var(--font-Inter);
+    font-weight: var(--font-weight-regular);
+    line-height: var(--font-lineh-big);
+    margin: 0 0 1.5vw;
+    width: 90%;
+  }
+
+  & .btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    background: none;
+    border: 0.1vw solid var(--color-white);
+    color: var(--color-white);
+    font-family: var(--font-Inter);
+    font-weight: var(--font-weight-regular);
+    line-height: var(--font-lineh-big);
+    font-size: 0.85vw;
+    padding: 0.5vw 1.2vw;
+    border-radius: 0.35vw;
+    cursor: pointer;
+    transition: 0.2s ease-in-out;
+    width: fit-content;
+    margin-top: 1vw;
+
+    &:hover {
+      background: rgba(255, 255, 255, 0.15);
+      border-color: #fff;
+    }
+  }
+
+  & .numDecor {
+    position: absolute;
+    bottom: -1.5vw;
+    right: 0vw;
+    color: rgba(255, 255, 255, 0.08);
+    font-size: 10vw;
+    font-family: var(--font-Inter);
+    font-weight: var(--font-weight-black);
+    line-height: var(--font-lineh-small);
+    pointer-events: none;
+    user-select: none;
+    letter-spacing: -0.02em;
+  }
+}
+
+@media (max-width: 1024px) {
+  .textBlock {
+    width: 50%;
+    padding: 2.5vw 2vw 2.5vw 4.5vw;
+
+    & .iconBlock {
+      gap: 0.3vw;
+      margin-bottom: 1.5vw;
+
+      & .icon {
+        width: 6.5vw;
+        height: 6.5vw;
+      }
+    }
+
+    & .title {
+      font-size: 3.6vw;
+      margin: 0 0 2vw;
+      width: 80%;
+    }
+
+    & .description {
+      font-size: 1.8vw;
+      margin: 0 0 2vw;
+      width: 90%;
+    }
+
+    & .btn {
+      font-size: 1.8vw;
+      padding: 0.75vw 2vw;
+      border-radius: 0.5vw;
+      margin-top: 1vw;
+    }
+
+    & .numDecor {
+      bottom: -2.9vw;
+      right: 0vw;
+      font-size: 22vw;
+      letter-spacing: -0.02em;
+    }
+  }
+}
+
+@media (max-width: 576px) {
+  .textBlock {
+    width: 100%;
+    padding: 7vw 5vw;
+
+    & .iconBlock {
+      gap: 0.3vw;
+      margin-bottom: 3vw;
+
+      & .icon {
+        width: 10vw;
+        height: 10vw;
+      }
+    }
+
+    & .title {
+      font-size: 5vw;
+      margin: 0 0 3vw;
+      width: 100%;
+    }
+
+    & .description {
+      font-size: 3.6vw;
+      margin: 0 0 3vw;
+      width: 100%;
+    }
+
+    & .btn {
+      font-size: 3.6vw;
+      padding: 1vw 3vw;
+      border-radius: 1vw;
+      margin-top: 2vw;
+    }
+
+    & .numDecor {
+      display: none;
+      bottom: -2.9vw;
+      right: 0vw;
+      font-size: 30vw;
+      letter-spacing: -0.02em;
+    }
+  }
+}
+
+.imageBlock {
+  flex: 1;
+  overflow: hidden;
+  position: relative;
+
+  & .image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    display: block;
+  }
+}

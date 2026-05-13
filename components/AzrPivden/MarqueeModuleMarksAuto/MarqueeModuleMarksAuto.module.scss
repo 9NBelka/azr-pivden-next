@@ -1,0 +1,54 @@
+.discountBlock {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  padding: 0.5vw 0;
+  background: var(--color-white);
+  width: 100%;
+  overflow: hidden;
+  height: 5vw;
+
+  & .trustedScreenBlock {
+    display: flex;
+    padding: 0vw 2vw;
+    overflow: hidden;
+  }
+
+  & img {
+    width: 3vw;
+    height: 100%;
+  }
+}
+
+@media (max-width: 1024px) {
+  .discountBlock {
+    display: flex;
+    padding: 1vw 0;
+    height: 13vw;
+
+    & .trustedScreenBlock {
+      padding: 0vw 3vw;
+    }
+
+    & img {
+      width: 7vw;
+      height: 100%;
+    }
+  }
+}
+
+@media (max-width: 576px) {
+  .discountBlock {
+    display: flex;
+    padding: 1.5vw 0;
+    height: 18vw;
+
+    & .trustedScreenBlock {
+      padding: 0vw 4vw;
+    }
+
+    & img {
+      width: 10vw;
+    }
+  }
+}
