@@ -236,6 +236,31 @@
 
     & .carImage {
       position: absolute;
+      top: 3vw;
+      right: -15vw;
+      width: 75vw;
+      z-index: 1;
+    }
+  }
+}
+
+@media (max-width: 576px) {
+  .rightSide {
+    display: flex;
+    flex-direction: column;
+    width: 0%;
+    position: relative;
+
+    & .mapImage {
+      position: absolute;
+      top: -50vw;
+      right: -25vw;
+      width: 100vw;
+      z-index: 0;
+    }
+
+    & .carImage {
+      position: absolute;
       top: 10vw;
       right: -37vw;
       width: 100vw;
