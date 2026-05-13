@@ -44,8 +44,8 @@ export default function Header({ navLinks }: { navLinks: NavLink[] }) {
 
           <div className={styles.contactContainer}>
             <div className={styles.twoPhonesBlock}>
-              <a className={styles.linkToPhone} href='tel:+380671155120' id='headerPhone'>
-                <FiPhoneCall className={styles.iconPhone} /> +380 (67) 115-51-20
+              <a className={styles.linkToPhone} href='tel:+380676428206' id='headerPhone'>
+                <FiPhoneCall className={styles.iconPhone} /> +380 (67) 642-82-06
               </a>
             </div>
             <button
