@@ -192,6 +192,15 @@
 
     &:hover {
       transform: scale(1);
+      & .iconContainer {
+        background: rgba(36, 137, 244, 1);
+
+        & img {
+          filter: invert(100%);
+          -webkit-filter: invert(100%);
+          -moz-filter: invert(100%);
+        }
+      }
     }
 
     .cardHeader {
