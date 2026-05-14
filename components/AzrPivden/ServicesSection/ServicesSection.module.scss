@@ -337,12 +337,14 @@
     margin-top: 2vw;
 
     & .allPositions {
-      font-size: 3.6vw;
-      padding: 2.5vw 4.5vw;
+      font-size: 5vw;
+      padding: 2.5vw 5.5vw;
       border-radius: 1vw;
       gap: 2vw;
+      color: rgba(36, 137, 244, 1);
 
       & .allPositionsIcon {
+        display: none;
         width: 3vw;
         height: 3vw;
       }
@@ -379,7 +381,7 @@
 
 @media (max-width: 576px) {
   .footer {
-    margin-top: 5vw;
+    margin-top: 10vw;
 
     & .footerText {
       font-size: 3.6vw;

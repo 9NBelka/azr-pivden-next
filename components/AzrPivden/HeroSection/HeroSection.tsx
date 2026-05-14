@@ -15,7 +15,8 @@ export default function HeroSection() {
                 Ремонт <br /> японських та VAG автомобілів у <br /> Харкові
               </h1>
               <h2 className={styles.description}>
-                ГРМ • Ходова • Радіатор печі • ТО • Розвал-сходження
+                Діагностика • Заміна ГРМ • Ремонт ходової • Технічне обслуговування •
+                Розвал-сходження
               </h2>
               <p className={styles.marcksAutoText}>
                 Toyota • Nissan • Honda • Mazda • Mitsubishi • Suzuki VW • Audi • Skoda • Ford • KIA

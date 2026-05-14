@@ -66,6 +66,9 @@
     & .icon {
       width: 3.25vw;
       height: 3.25vw;
+      filter: invert(50%);
+      -webkit-filter: invert(50%);
+      -moz-filter: invert(50%);
     }
   }
 

@@ -1,6 +1,6 @@
 'use client';
 
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 import styles from './ServicesSection.module.scss';
 import { BsFillTelephoneFill, BsSliders, BsX } from 'react-icons/bs';
 import { FiPhoneCall } from 'react-icons/fi';
@@ -153,8 +153,16 @@ const services: Service[] = [
 const ServicesSection = () => {
   const [selectedService, setSelectedService] = useState<Service | null>(null);
   const [expanded, setExpanded] = useState(false);
+  const [visibleCount, setVisibleCount] = useState(8);
 
-  const VISIBLE_COUNT = 8;
+  useEffect(() => {
+    const update = () => {
+      setVisibleCount(window.innerWidth <= 600 ? 3 : 8);
+    };
+    update();
+    window.addEventListener('resize', update);
+    return () => window.removeEventListener('resize', update);
+  }, []);
 
   const openModal = (service: Service) => {
     setSelectedService(service);
@@ -174,7 +182,7 @@ const ServicesSection = () => {
         </div>
 
         <div className={styles.allCards}>
-          {services.slice(0, VISIBLE_COUNT).map((service) => (
+          {services.slice(0, visibleCount).map((service) => (
             <div
               key={service.idCard}
               className={styles.card}
@@ -199,7 +207,7 @@ const ServicesSection = () => {
           ))}
 
           <div className={`${styles.extraCardsWrapper} ${expanded ? styles.expanded : ''}`}>
-            {services.slice(VISIBLE_COUNT).map((service) => (
+            {services.slice(visibleCount).map((service) => (
               <div
                 key={service.idCard}
                 className={styles.card}

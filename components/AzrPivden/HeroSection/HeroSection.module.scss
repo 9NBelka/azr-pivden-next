@@ -61,7 +61,7 @@
     color: rgba(107, 114, 128, 1);
     font-family: var(--font-Inter);
     font-weight: var(--font-weight-bold);
-    line-height: var(--font-lineh-small);
+    line-height: var(--font-lineh-normal);
     margin-top: 1.5vw;
   }
 
@@ -128,7 +128,7 @@
       font-size: 1.8vw;
       margin-top: 3vw;
       line-height: var(--font-lineh-big);
-      width: 100%;
+      width: 70%;
     }
 
     & .buttonBlock {
@@ -172,7 +172,7 @@
     & .marcksAutoText {
       font-size: 3.4vw;
       margin-top: 5vw;
-      width: 100%;
+      width: 95%;
     }
 
     & .buttonBlock {

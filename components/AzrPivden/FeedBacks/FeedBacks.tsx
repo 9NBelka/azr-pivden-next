@@ -97,7 +97,7 @@ export default function FeedBacks() {
       </Marquee>
       <div className={styles.footer}>
         <a
-          href='https://www.google.com/maps/place/%D0%A1%D0%A2%D0%9E+%D0%90%D0%97%D0%A0+%D0%9F%D1%96%D0%B2%D0%B4%D0%B5%D0%BD%D0%BD%D0%B8%D0%B9/@49.985412,36.205966,20z'
+          href='https://www.google.com/maps/place/%D0%A1%D0%A2%D0%9E+%D0%90%D0%97%D0%A0+%D0%9F%D1%96%D0%B2%D0%B4%D0%B5%D0%BD%D0%BD%D0%B8%D0%B9/@49.985412,36.205966,20z/data=!4m6!3m5!1s0x4127a123783a6f4b:0xac80806aed8fe16a!8m2!3d49.9853986!4d36.2059564!16s%2Fg%2F11frl3zwww?entry=tts&g_ep=EgoyMDI2MDUwNi4wIPu8ASoASAFQAw%3D%3D&skid=50c22372-ed5c-432a-b741-58d47e18e50d'
           target='_blank'
           rel='noopener noreferrer'
           className={styles.moreBtn}>

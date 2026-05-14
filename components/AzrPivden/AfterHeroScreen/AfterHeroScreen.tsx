@@ -12,9 +12,9 @@ const cards = [
   },
   {
     num: '02',
-    icon: '/images/chain-check-engine-icon.png',
+    icon: '/images/oil-check-icon.png',
     iconAlt: 'CHECK',
-    title: 'Заміна олії та фільтрів',
+    title: 'Заміна масла та фільтрів',
     description: null,
     image: '/images/AfterHeroScreen-oil-image.jpg',
     accent: false,
