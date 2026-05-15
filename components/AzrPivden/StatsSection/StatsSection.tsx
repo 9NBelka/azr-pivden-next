@@ -7,7 +7,7 @@ const stats = [
   { num: '1278', label: 'РОЗВАЛ СХОДЖЕННЯ', icon: '/images/StatsSection/wheel-icon.png' },
   { num: '117', label: 'КАП.РЕМОНТ ДВИГУНА', icon: '/images/StatsSection/engine-icon.png' },
   { num: '3919', label: 'ПРОВЕДЕНО ДІАГНОСТИК', icon: '/images/StatsSection/diagnostic-icon.png' },
-  { num: '671', label: 'ЗАМІНА АМОРТИЗАТОРІВ', icon: '/images/StatsSection/amort-icon.png' },
+  { num: '644', label: 'ЗАМІНА АМОРТИЗАТОРІВ', icon: '/images/StatsSection/amort-icon.png' },
 ];
 
 const photos = [

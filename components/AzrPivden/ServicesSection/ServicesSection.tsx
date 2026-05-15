@@ -23,7 +23,8 @@ const services: Service[] = [
   {
     iconImage: './images/ServicesSection/timing-belt-replacement.png',
     title: 'Заміна ременя ГРМ',
-    description: 'СТО "АЗР Південний" виконує заміну комплектів ременів ГРМ.',
+    description:
+      'Почули гул, свист, писк чи стукіт під капотом? Не відкладайте заміну ременя ГРМ в АЗР Південний. ',
     price: 'від 4000 грн',
     idCard: 'timing-belt-replacement',
     modal: {
@@ -37,7 +38,7 @@ const services: Service[] = [
     iconImage: './images/ServicesSection/suspension-repair.png',
     title: 'Ремонт ходової',
     description:
-      'Наші фахівці точно визначать і усунуть несправність в підвісці вашого автомобіля.',
+      'Стукіт, скрип, вібрація або тягне кермо? Не відкладайте ремонт підвіски в АЗР Південний ',
     price: 'від 500 грн',
     idCard: 'suspension-repair',
     modal: {
@@ -50,7 +51,8 @@ const services: Service[] = [
     // icon: <FaCarSide className={styles.cardIcon} />,
     iconImage: './images/ServicesSection/wheel-alignment-adjustment.png',
     title: 'Регулювання розвалу-сходження',
-    description: 'Рівний курс і рівномірний знос шин — налаштуємо кути коліс на стенді.',
+    description:
+      'Тягне кермо чи кидає машину, нерівно стоїть руль або  їсть резину? Перевірте розвал-сходження в АЗР Південний.',
     price: 'від 700 грн',
     idCard: 'wheel-alignment-adjustment',
     modal: {
@@ -62,7 +64,8 @@ const services: Service[] = [
   {
     iconImage: './images/ServicesSection/oil-change.png',
     title: 'Заміна масла',
-    description: 'СТО "АЗР Південний" виконує заміну масла та технічних рідин',
+    description:
+      'Загорівся значок масла, нагадування про ТО або двигун працює шумніше? Запишіться на заміну масла в АЗР Південний. ',
     price: 'від 600 грн',
     idCard: 'oil-change',
     modal: {
@@ -75,7 +78,8 @@ const services: Service[] = [
     // icon: <FaLink className={styles.cardIcon} />,
     iconImage: './images/ServicesSection/timing-chain-replacement.png',
     title: 'Заміна ланцюга ГРМ',
-    description: 'СТО "АЗР Південний" виконує заміну комплектів ланцюгів ГРМ.',
+    description:
+      'Чуєте металевий брязкіт, торохтіння під капотом чи блимає Check Engine ? Термінова заміна ланцюга ГРМ в АЗР Південний.',
     price: 'від 6000 грн',
     idCard: 'timing-chain-replacement',
     modal: {
@@ -88,7 +92,8 @@ const services: Service[] = [
     // icon: <FaTools className={styles.cardIcon} />,
     iconImage: './images/ServicesSection/engine-repair.png',
     title: 'Ремонт двигуна',
-    description: 'Від діагностики до капремонту — повернемо двигуну потужність і надійність.',
+    description:
+      'Машина димить, троїть двигун, велика витрата мастила чи зникла тяга? Професійний ремонт двигуна в АЗР Південний.',
     price: 'від 20000 грн',
     idCard: 'engine-repair',
     modal: {
@@ -100,7 +105,8 @@ const services: Service[] = [
   {
     iconImage: './images/ServicesSection/auto-electrical-repair.png',
     title: 'Ремонт електрики',
-    description: 'Знайдемо та усунемо будь-яку несправність електросистеми вашого автомобіля.',
+    description:
+      'Горить Check Engine, авто не заводиться або зникло світло? Якісний ремонт автоелектрики в АЗР Південний. ',
     price: 'від 500 грн',
     idCard: 'auto-electrical-repair',
     modal: {
@@ -113,7 +119,8 @@ const services: Service[] = [
     // icon: <FaCarCrash className={styles.cardIcon} />,
     iconImage: './images/ServicesSection/brake-system-repair.png',
     title: 'Ремонт гальмівної системи',
-    description: 'Ваша безпека — наш пріоритет. Відновимо гальма до заводських характеристик.',
+    description:
+      'Б’є руль при гальмуванні, скриплять колодки чи провалилася педаль? Терміновий ремонт гальм в АЗР Південний. ',
     price: 'від 600 грн',
     idCard: 'brake-system-repair',
     modal: {
@@ -127,7 +134,7 @@ const services: Service[] = [
     iconImage: './images/ServicesSection/shock-absorber-replacement.png',
     title: 'Заміна амортизаторів',
     description:
-      'Відновимо плавність ходу та керованість — замінимо амортизатори швидко та якісно.',
+      'Машина гойдається, стукає підвіска на ямах чи потекли амортизатори? Професійна заміна амортизаторів в АЗР Південний. ',
     price: 'від 700 грн',
     idCard: 'shock-absorber-replacement',
     modal: {
@@ -139,7 +146,8 @@ const services: Service[] = [
   {
     iconImage: './images/ServicesSection/air-conditioning-system-repair.png',
     title: 'Ремонт системи кондиціонування',
-    description: 'Заправка, діагностика та ремонт кондиціонера — прохолода у салоні весь сезон.',
+    description:
+      'Не холодить кондиціонер, з’явився неприємний запах чи дме тепле повітря? Заправка та Ремонт кондиціонера в АЗР Південний. ',
     price: 'від 1000 грн',
     idCard: 'air-conditioning-system-repair',
     modal: {
@@ -201,7 +209,7 @@ const ServicesSection = () => {
               </div>
 
               <div className={styles.cardContent}>
-                <div className={styles.cardDescription}>{service.modal.bigDescription}</div>
+                <div className={styles.cardDescription}>{service.description}</div>
               </div>
             </div>
           ))}
@@ -224,7 +232,7 @@ const ServicesSection = () => {
                 </div>
 
                 <div className={styles.cardContent}>
-                  <div className={styles.cardDescription}>{service.modal.bigDescription}</div>
+                  <div className={styles.cardDescription}>{service.description}</div>
                 </div>
               </div>
             ))}

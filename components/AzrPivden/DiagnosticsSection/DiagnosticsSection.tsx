@@ -23,7 +23,8 @@ const diagnostics: DiagnosticService[] = [
   {
     iconImage: './images/ServicesSection/engine-diagnostics.png',
     title: 'Діагностика двигуна',
-    description: 'СТО "АЗР Південний" виконує всі види діагностики бензинових і дизельних двигунів',
+    description:
+      'Троїть, стукає, димить мотор, щось підтікає чи горить Check Engine? Професійна діагностика двигуна в АЗР Південний.',
     price: 'від 500 грн',
     idCard: 'engine-diagnostics',
     modal: {
@@ -36,7 +37,7 @@ const diagnostics: DiagnosticService[] = [
     iconImage: './images/ServicesSection/suspension-diagnostics.png',
     title: 'Діагностика підвіски',
     description:
-      'СТО "АЗР Південний" виконує всі види діагностики ходової частини автомобілів в Харкові',
+      'Стукає у підвісці, гримить знизу, кидає на ямах чи тягне кермо? Діагностика ходової в АЗР Південний.',
     price: 'від 500 грн',
     idCard: 'suspension-diagnostics',
     modal: {
@@ -49,7 +50,8 @@ const diagnostics: DiagnosticService[] = [
     iconImage: './images/ServicesSection/pre-purchase-diagnostics.png',
     // icon: <FaCar className={styles.cardIcon} />,
     title: 'Діагностика перед покупкою',
-    description: 'СТО "АЗР Південний" виконує діагностику всіх систем автомобілів.',
+    description:
+      'Купуєте б/в авто, потрібен товщиномір, перевірити пробіг чи приховані дефекти? Експертна перевірка перед купівлею в АЗР Південний.',
     price: 'від 2000 грн',
     idCard: 'pre-purchase-diagnostics',
     modal: {
@@ -61,7 +63,8 @@ const diagnostics: DiagnosticService[] = [
   {
     iconImage: './images/ServicesSection/computer-diagnostics.png',
     title: 'Комп`ютерна діагностика',
-    description: 'СТО "АЗР Південний" виконує комп`ютерну діагностику всіх систем автомобілів',
+    description:
+      'Горить Check Engine, проблеми з електрикою, впала потужність або з’явилися помилки? Комп’ютерна діагностика в АЗР Південний.',
     price: 'від 600 грн',
     idCard: 'computer-diagnostics',
     modal: {
@@ -114,7 +117,7 @@ const DiagnosticsSection = () => {
               </div>
 
               <div className={styles.cardContent}>
-                <div className={styles.cardDescription}>{service.modal.bigDescription}</div>
+                <div className={styles.cardDescription}>{service.description}</div>
               </div>
             </div>
           ))}
@@ -150,7 +153,7 @@ const DiagnosticsSection = () => {
                 className={styles.modalImage}
               />
 
-              <p className={styles.modalDescription}>{selectedService.modal.bigDescription}</p>
+              <p className={styles.modalDescription}>{selectedService.description}</p>
 
               <div className={styles.callButtonBlock}>
                 <a href='tel:+380671155120' className={styles.callButton}>
